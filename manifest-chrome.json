@@ -1,7 +1,0 @@
-{
-    "name"               : "grabby.pouriap",
-    "description"        : "Native application for Grabby",
-    "type"               : "stdio",
-    "allowed_origins"    : ["chrome-extension://miclnledllamfcnjbhncfmncpnlniigm/"],
-    "path"               : "C:\\Users\\Pouria\\Desktop\\New folder\\grabby_native_app.exe"
-}
