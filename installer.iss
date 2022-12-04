@@ -33,13 +33,13 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
 Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\ffmpeg.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\FlashGot.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\grabby_flashgot.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\grabby_native_app.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\native-manifest.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\native-manifest-chrome.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\ytdl.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\firefox\*"; DestDir: "{app}\firefox"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\chrome\*"; DestDir: "{app}\chrome"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\yt-dlp.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\firefox-extension\*"; DestDir: "{app}\firefox"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\files\chrome-extension\*"; DestDir: "{app}\chrome"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
