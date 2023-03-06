@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Grabby Toolkit"
-#define MyAppVersion "0.50.0"
+#define MyAppVersion "0.60.0"
 #define MyAppPublisher "Pouria Pirhadi"
 #define MyAppURL "https://github.com/pouriap/grabby"
 
@@ -23,7 +23,7 @@ AllowNoIcons=yes
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 OutputBaseFilename=Grabby-Toolkit-{#MyAppVersion}-Setup
-SetupIconFile=D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\src\icons\icon.ico
+SetupIconFile=D:\Personal Folder\Pouria\My Documents\_Projects\JavaScript\Grabby\_installer\_extra\icon.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
