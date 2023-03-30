@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Grabby Toolkit"
-#define MyAppVersion "0.60.3"
+#define MyAppVersion "0.61.0"
 #define MyAppPublisher "Pouria Pirhadi"
 #define MyAppURL "https://github.com/pouriap/grabby"
 
