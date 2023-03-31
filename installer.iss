@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Grabby Toolkit"
-#define MyAppVersion "0.61.0"
+#define MyAppVersion "0.61.3"
 #define MyAppPublisher "Pouria Pirhadi"
 #define MyAppURL "https://github.com/pouriap/grabby"
 
@@ -45,4 +45,6 @@ Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 
 [Registry]
 Root: HKLM; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; Flags: uninsdeletekey; ValueType: string; ValueData: "{app}\native-manifest.json"
+Root: HKCU; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; Flags: uninsdeletekey; ValueType: string; ValueData: "{app}\native-manifest.json"
 Root: HKLM; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; Flags: uninsdeletekey; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"
+Root: HKCU; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; Flags: uninsdeletekey; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"
