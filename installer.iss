@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Grabby Toolkit"
-#define MyAppVersion "0.61.3"
+#define MyAppVersion "0.62.12"
 #define MyAppPublisher "Pouria Pirhadi"
 #define MyAppURL "https://github.com/pouriap/grabby"
 
@@ -27,7 +27,6 @@ SetupIconFile=.\res\icon.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
-PrivilegesRequired=none
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -46,12 +45,19 @@ Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 
 [Registry]
 ; Admin
+Root: HKLM; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; Flags: uninsdeletekey; ValueType: string; ValueData: "{app}\native-manifest.json"
+Root: HKLM; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; Flags: uninsdeletekey; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"
+
 ;Root: "HKLM32"; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest.json"; Flags: uninsdeletekey
 ;Root: "HKLM64"; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest.json"; Flags: uninsdeletekey
 ;Root: "HKLM32"; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"; Flags: uninsdeletekey
 ;Root: "HKLM64"; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"; Flags: uninsdeletekey
+
 ; Non-admin
-Root: "HKCU32"; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest.json"; Flags: uninsdeletekey
-Root: "HKCU64"; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest.json"; Flags: uninsdeletekey
-Root: "HKCU32"; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"; Flags: uninsdeletekey
-Root: "HKCU64"; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"; Flags: uninsdeletekey
+;Root: HKCU; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; Flags: uninsdeletekey; ValueType: string; ValueData: "{app}\native-manifest.json"
+;Root: HKCU; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; Flags: uninsdeletekey; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"
+
+;Root: "HKCU32"; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest.json"; Flags: uninsdeletekey
+;Root: "HKCU64"; Subkey: "SOFTWARE\Mozilla\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest.json"; Flags: uninsdeletekey
+;Root: "HKCU32"; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"; Flags: uninsdeletekey
+;Root: "HKCU64"; Subkey: "SOFTWARE\Google\Chrome\NativeMessagingHosts\grabby.pouriap"; ValueType: string; ValueData: "{app}\native-manifest-chrome.json"; Flags: uninsdeletekey
